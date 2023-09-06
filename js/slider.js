@@ -51,15 +51,15 @@ $(document).ready(function() {
 
         // Подключение файла стилей в зависимости от темы
         if (isDarkTheme) {
-            $("#theme-styles").attr("href", "/style/dark.css");
-            $("#theme-toggle img").attr("src", "/img/Switch-dark.svg");
-            $(".analysis img").attr("src", "/img/speed-dark.png");
-            $(".main-table__graphic img").attr("src", "/img/trade-image-dark.png");
+            $("#theme-styles").attr("href", "style/dark.css");
+            $("#theme-toggle img").attr("src", "img/Switch-dark.svg");
+            $(".analysis img").attr("src", "img/speed-dark.png");
+            $(".main-table__graphic img").attr("src", "img/trade-image-dark.png");
         } else {
-            $("#theme-styles").attr("href", "/style/main.css");
-            $("#theme-toggle img").attr("src", "/img/Switch.svg");
-            $(".analysis img").attr("src", "/img/speed.png");
-            $(".main-table__graphic img").attr("src", "/img/trade-image.png");
+            $("#theme-styles").attr("href", "style/main.css");
+            $("#theme-toggle img").attr("src", "img/Switch.svg");
+            $(".analysis img").attr("src", "img/speed.png");
+            $(".main-table__graphic img").attr("src", "img/trade-image.png");
         }
     });
 });
