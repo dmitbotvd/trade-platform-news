@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+  <link id="theme-styles" rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+  <link rel="stylesheet" type="text/css" href="style/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="datepicker/css/datepicker.css">
+</head>
+<body class="light">
+<header>
+  <div class="container-fluid header">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-logo" href="/">
+            <img src="img/logo.svg" alt="">
+          </a>
+          <div class="navbar__button">
+            <div class="navbar__button-item">
+              <a href="/">
+                <img src="img/stat.svg" alt="">
+              </a>
+            </div>
+            <div class="navbar__button-item">
+              <a href="/">
+                <img src="img/person.svg" alt="">
+              </a>
+            </div>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="header-nav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="active" aria-current="page" href="#">Торговый терминал</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="#">Личный кабинет</a>
+                </li>
+              </ul>
+              <ul class="balance">
+                <li class="balance__item">
+                  <p class="balance__title">Доступные средства</p>
+                  <p class="balance__value">$2,830.05</p>
+                </li>
+                <li class="balance__item">
+                  <p class="balance__title">Капитал</p>
+                  <p class="balance__value">$2,830.05</p>
+                </li>
+                <li class="balance__item">
+                  <p class="balance__title">Маржа</p>
+                  <p class="balance__value">$1,200.00</p>
+                </li>
+                <li class="balance__item">
+                  <p class="balance__title">Прибыль/убыток</p>
+                  <p class="balance__value">$0.00</p>
+                </li>
+                <li class="balance__item">
+                  <p class="balance__title">Депозит</p>
+                  <p class="balance__value">$100.00</p>
+                </li>
+              </ul>
+              <div class="header-menu">
+                <div class="header-menu__right">
+                  <div class="header-menu__button">
+                    <a href="#" id="theme-toggle" >
+                      <img src="img/Switch.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="header-menu__button">
+                    <a href="#">
+                      <img src="img/Notification.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="header-menu__user">
+                  <div class="header-menu__text">
+                    <p class="header-menu__text-name">Igor M.</p>
+                    <p class="header-menu__text-email">igortrading23@gmail.com</p>
+                  </div>
+                  <div class="header-menu__img">
+                    <img src="img/user.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <main>
+
+    <div class="container-fluid tikets">
+      <div class="tikets__item">
+        <img class="tikets__item-icon" src="img/eth.png" alt="">
+        <p class="tikets__item-text__bold">ETH</p>
+        <p class="tikets__item-price">$24,839.20</p>
+        <p class="tikets__item-procent tikets__item-green">2.12%</p>
+      </div>
+      <div class="tikets__item">
+        <img class="tikets__item-icon" src="img/xrp.png" alt="">
+        <p class="tikets__item-text__bold">xrp</p>
+        <p class="tikets__item-price">$24,839.20</p>
+        <p class="tikets__item-procent tikets__item-red">2.12%</p>
+      </div>
+      <div class="tikets__item">
+        <img class="tikets__item-icon" src="img/ltc.png" alt="">
+        <p class="tikets__item-text__bold">ltc</p>
+        <p class="tikets__item-price">$24,839.20</p>
+        <p class="tikets__item-procent tikets__item-green">2.12%</p>
+      </div>
+      <div class="tikets__item">
+        <img class="tikets__item-icon" src="img/avax.png" alt="">
+        <p class="tikets__item-text__bold">avax</p>
+        <p class="tikets__item-price">$24,839.20</p>
+        <p class="tikets__item-procent tikets__item-green">2.12%</p>
+      </div>
+      <div class="tikets__item">
+        <img class="tikets__item-icon" src="img/sol.png" alt="">
+        <p class="tikets__item-text__bold">sol</p>
+        <p class="tikets__item-price">$24,839.20</p>
+        <p class="tikets__item-procent tikets__item-red">2.12%</p>
+      </div>
+      <div class="tikets__item">
+        <img class="tikets__item-icon" src="img/mask.png" alt="">
+        <p class="tikets__item-text__bold">mask</p>
+        <p class="tikets__item-price">$24,839.20</p>
+        <p class="tikets__item-procent tikets__item-green">2.12%</p>
+      </div>
+      <div class="tikets__item">
+        <img class="tikets__item-icon" src="img/eth.png" alt="">
+        <p class="tikets__item-text__bold">ETH</p>
+        <p class="tikets__item-price">$24,839.20</p>
+        <p class="tikets__item-procent tikets__item-red">2.12%</p>
+      </div>
+      <div class="tikets__item">
+        <img class="tikets__item-icon" src="img/eth.png" alt="">
+        <p class="tikets__item-text__bold">ETH</p>
+        <p class="tikets__item-price">$24,839.20</p>
+        <p class="tikets__item-procent tikets__item-green">2.12%</p>
+      </div>
+    </div>
+    <div class="container-fluid lk-pills">
+      <div class="container">
+        <ul class="nav nav-pills"  role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-account-tab" data-bs-toggle="pill" data-bs-target="#pills-account" type="button" role="tab" aria-controls="pills-account" aria-selected="true">Мой аккаунт</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-active-tab" data-bs-toggle="pill" data-bs-target="#pills-active" type="button" role="tab" aria-controls="pills-active" aria-selected="false">Активы</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-history-torg-tab" data-bs-toggle="pill" data-bs-target="#pills-history-torg" type="button" role="tab" aria-controls="pills-history-torg" aria-selected="false">История торговли</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-history-trn-tab" data-bs-toggle="pill" data-bs-target="#pills-history-trn" type="button" role="tab" aria-controls="pills-history-trn" aria-selected="false">История транзакций</button>
+          </li>
+        </ul>
+        <select class="form-select" id="contentSelector" aria-label="Default select example">
+          <option selected value="1">Мой аккаунт</option>
+          <option value="2">Активы</option>
+          <option value="3">История торговли</option>
+          <option value="4">История транзакций</option>
+        </select>
+      </div>
+    </div>
+    <div class="container-fluid lk">
+      <div class="container">
+        <div class="lk-header">
+          <div class="tab-content" id="pills-tabContent">
+            <div id="contentToShow1" class="content">
+              <div class="tab-pane fade show active" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab" tabindex="0">
+              <form class="row">
+                <div class="col-lg-4 col-12">
+                  <div class="input__item">
+                    <label for="fullname" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullname">
+                  </div>
+                  <div class="input__item">
+                    <label for="oldpass" class="form-label">Old password</label>
+                    <input type="password" class="form-control" id="oldpass">
+                  </div>
+                  <div class="input__item">
+                    <label for="newpass" class="form-label">New password</label>
+                    <input type="password" class="form-control" id="newpass">
+                  </div>
+                  <div class="input__item">
+                    <label for="confirmpass" class="form-label">Confirm password</label>
+                    <div class="input__item-btn">
+                      <input type="password" class="form-control" id="confirmpass" >
+                      <button type="submit" class="btn">Change password</button>
+                    </div>
+                  </div>
+                  <div class="input__item">
+                    <label for="currentemail" class="form-label">Current email</label>
+                    <div class="input__item-btn">
+                      <input type="text" class="form-control" id="currentemail" placeholder="igortrading23@gmail.com">
+                      <button type="submit" class="btn">Change email</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12 lk-header__right">
+                  <div class="input__item datepicker">
+                    <label for="datepicker" class="form-label">Birthday</label>
+                      <span>
+                        <input type="text" class="form-control" id="datepicker" value="30.08.2023">
+                        <img src="img/calendar.svg" alt="">
+                      </span>
+                  </div>
+                  <div class="input__item">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" class="form-select" aria-label="Default select example">
+                      <option selected>Great Britain</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="input__item">
+                    <label for="phone" class="form-label">Phone</label>
+                    <div class="input__item-btn">
+                      <input type="text" class="form-control" id="phone" placeholder="+ 4 662 523 52 93">
+                      <button type="submit" class="btn">Change phone</button>
+                    </div>
+
+                  </div>
+                  <div class="input__item">
+                    <label for="passport" class="form-label">Passport</label>
+                    <input type="text" class="form-control" id="passport">
+                  </div>
+                  <div class="input__item">
+                    <label for="idendification" class="form-label">Identification number</label>
+                    <input type="text" class="form-control" id="idendification">
+                  </div>
+                  <div class="input__btn">
+                    <button type="submit" class="btn">Save changes</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            </div>
+            <div id="contentToShow2" class="content" >
+              <div class="tab-pane fade "   id="pills-active" role="tabpanel" aria-labelledby="pills-active-tab" tabindex="0">
+              <div class="table-content">
+                <div class="grid-table grid-table-active">
+                  <div class="grid-title grid-items">
+                    <div class="grid-title__item">КОШЕЛЕК</div>
+                    <div class="grid-title__item">КАПИТАЛ</div>
+                    <div class="grid-title__item">ДЕЙСТВИЕ</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio">USD</div>
+                    <div class="grid-items__item">0.04545000 BTC</div>
+                    <div class="table-striped__group">
+                      <button class="table-striped__btn table-striped__link-blue">
+                        <img src="img/input.svg" alt="">
+                        <span>DEPOSIT</span></button>
+                      <button class="table-striped__btn table-striped__link-white">
+                        <img src="img/output.svg" alt="">
+                        <span>Withdraw</span></button>
+                      </div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio">USD</div>
+                    <div class="grid-items__item">0.04545000 BTC</div>
+                    <div class="table-striped__group">
+                      <button class="table-striped__btn table-striped__link-blue">
+                        <img src="img/input.svg" alt="">
+                        <span>DEPOSIT</span></button>
+                      <button class="table-striped__btn table-striped__link-white">
+                        <img src="img/output.svg" alt="">
+                        <span>Withdraw</span></button>
+                    </div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio">USD</div>
+                    <div class="grid-items__item">0.04545000 BTC</div>
+                    <div class="table-striped__group">
+                      <button class="table-striped__btn table-striped__link-blue">
+                        <img src="img/input.svg" alt="">
+                        <span>DEPOSIT</span></button>
+                      <button class="table-striped__btn table-striped__link-white">
+                        <img src="img/output.svg" alt="">
+                        <span>Withdraw</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div id="contentToShow3" class="content" >
+              <div class="tab-pane fade "  id="pills-history-torg" role="tabpanel" aria-labelledby="pills-history-torg-tab" tabindex="0">
+              <div class="table-content">
+                <div class="grid-table">
+                  <div class="grid-title grid-items">
+                    <div class="grid-title__item">ASSETS</div>
+                    <div class="grid-title__item">QUANTITY</div>
+                    <div class="grid-title__item">OPENING DATE</div>
+                    <div class="grid-title__item">OPENING price</div>
+                    <div class="grid-title__item">CLOSING DATE</div>
+                    <div class="grid-title__item">CLOSING PRICE</div>
+                    <div class="grid-title__item">VALUE</div>
+                    <div class="grid-title__item">CL</div>
+                    <div class="grid-title__item">PROFIT</div>
+                    <div class="grid-title__item">STATUS</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-green">+20.00 USD</div>
+                    <div class="striped__back-green">Opened</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-green">+20.00 USD</div>
+                    <div class="striped__back-green">Opened</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-green">+20.00 USD</div>
+                    <div class="striped__back-green">Opened</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-green">+20.00 USD</div>
+                    <div class="striped__back-green">Opened</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-green">+20.00 USD</div>
+                    <div class="striped__back-green">Opened</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-green">+20.00 USD</div>
+                    <div class="striped__back-green">Opened</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-red">-20.00 USD</div>
+                    <div class="striped__back-red">Closed</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-red">-20.00 USD</div>
+                    <div class="striped__back-red">Closed</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-red">-20.00 USD</div>
+                    <div class="striped__back-red">Closed</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> BTC / USD</div>
+                    <div class="grid-items__item">50</div>
+                    <div class="grid-items__item">21.09.23 13:00</div>
+                    <div class="grid-items__item">30206.00 USD</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">28817.00 USD</div>
+                    <div class="grid-items__item">0.00165530</div>
+                    <div class="grid-items__item">100</div>
+                    <div class="grid-items__item striped__color-red">-20.00 USD</div>
+                    <div class="striped__back-red">Closed</div>
+                  </div>
+                </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            </div>
+            <div id="contentToShow4" class="content" >
+              <div class="tab-pane fade "  id="pills-history-trn" role="tabpanel" aria-labelledby="pills-history-trn-tab" tabindex="0">
+              <div class="table-content">
+                <div class="grid-table grid-table-windroval">
+                  <div class="grid-title grid-items">
+                    <div class="grid-title__item">Date</div>
+                    <div class="grid-title__item">ACTIONS</div>
+                    <div class="grid-title__item">Closing DATE</div>
+                    <div class="grid-title__item">amount</div>
+                    <div class="grid-title__item">status</div>
+                    <div class="grid-title__item">Comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                  <div class="grid-items">
+                    <div class="grid-items__item"><input type="radio"> 23.06.2023 18:25</div>
+                    <div class="grid-items__item">Change</div>
+                    <div class="grid-items__item">25.09.23 20:19</div>
+                    <div class="grid-items__item">0.00</div>
+                    <div class="grid-items__item striped__color-green">Successful</div>
+                    <div class="grid-items__item">Example text for comment</div>
+                  </div>
+                </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<ul style="margin-top: 30px">
+  <li>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Withdrawals">
+      Вывод средств
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Withdrawals" tabindex="-1" aria-labelledby="exampleWithdrawals" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h1 class="modal-title" id="exampleWithdrawals">Вывод средств</h1>
+
+            <form class="modal-content__form">
+              <div class="modal-content__input amount-input">
+                <label>
+                  <input type="text" class="form-control" placeholder="Введите количество">
+                  <span class="amount-input-span">$</span>
+                </label>
+              </div>
+              <div class="modal-content__input">
+                <label>
+                  <input type="text" class="form-control" placeholder="Банк">
+                </label>
+              </div>
+              <div class="modal-content__input">
+                <label>
+                  <input type="text" class="form-control" placeholder="Номер счета / карты">
+                </label>
+              </div>
+              <div class="modal-content__input">
+                <label>
+                  <input type="text" class="form-control" placeholder="Бенефициар">
+                </label>
+              </div>
+              <div class="input__btn">
+                <button type="submit" class="btn">Вывод</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<ul>
+  <li>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#goTerminal">
+      Перейти в терминал
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="goTerminal" tabindex="-1" aria-labelledby="examplegoTerminal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h1 class="modal-title" id="examplegoTerminal">Вывод средств</h1>
+            <p>The financial department has started to execute your application. We will contact you shortly</p>
+            <div class="input__btn">
+              <button type="submit" class="btn">Перейти в торговый терминал</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<ul>
+  <li>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#makeDeposit">
+      Внести депозит
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="makeDeposit" tabindex="-1" aria-labelledby="examplemakeDeposit" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h1 class="modal-title" id="examplemakeDeposit">Внести депозит</h1>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-Bank-transfer-tab" data-bs-toggle="pill" data-bs-target="#pills-Bank-transfer" type="button" role="tab" aria-controls="pills-Bank-transfer" aria-selected="true">Банковский перевод</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Credit-card-tab" data-bs-toggle="pill" data-bs-target="#pills-Credit-card" type="button" role="tab" aria-controls="pills-Credit-card" aria-selected="false">Кредитная карта</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Crypto-transfer-tab" data-bs-toggle="pill" data-bs-target="#pills-Crypto-transfer" type="button" role="tab" aria-controls="pills-Crypto-transfer" aria-selected="false">Крипто перевод</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-Bank-transfer" role="tabpanel" aria-labelledby="pills-Bank-transfer-tab" tabindex="0">
+                <form class="modal-content__form">
+                  <div class="modal-content__input">
+                    <label>
+                      <input type="text" class="form-control" placeholder="IBAN">
+                    </label>
+                  </div>
+                  <div class="modal-content__input">
+                    <label>
+                      <input type="text" class="form-control" placeholder="Bank name">
+                    </label>
+                  </div>
+                  <div class="modal-content__input">
+                    <label>
+                      <input type="text" class="form-control" placeholder="Responsible for this transfer manager">
+                    </label>
+                  </div>
+                  <div class="input__btn">
+                    <button type="submit" class="btn">Внести депозит</button>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-Credit-card" role="tabpanel" aria-labelledby="pills-Credit-card-tab" tabindex="0">
+                <form class="modal-content__form">
+                  <div class="modal-content__input">
+                    <label class="amount-input">
+                      <input type="text" class="form-control" placeholder="Сумма">
+                      <span class="amount-input-span">RUB</span>
+                    </label>
+                  </div>
+                  <div class="modal-content__input">
+                    <label>
+                      <input type="text" class="form-control" placeholder="Номер карты">
+                    </label>
+                  </div>
+                  <div class="modal-content__input">
+                    <label>
+                      <input type="text" class="form-control" placeholder="Полное имя владельца карты">
+                    </label>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="modal-content__input">
+                        <label>
+                          <input type="text" class="form-control" placeholder="ММ/ГГ">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="modal-content__input">
+                        <label>
+                          <input type="text" class="form-control" placeholder="CVV">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input__btn">
+                    <button type="submit" class="btn">Внести депозит</button>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-Crypto-transfer" role="tabpanel" aria-labelledby="pills-Crypto-transfer-tab" tabindex="0">
+                <form class="modal-content__form">
+                  <div class="modal-content__qr">
+                    <img src="img/qr.svg" alt="">
+                  </div>
+                  <div class="modal-content__input">
+                    <label>
+                      <input type="text" class="form-control" placeholder="Сеть">
+                    </label>
+                  </div>
+                  <div class="modal-content__input">
+                    <label class="input-address">
+                      <input type="text" class="form-control" placeholder="Адрес">
+                      <span class="input-address-copy">
+                                                    <a href="/">
+                                                        <img src="img/copy.svg" alt="">
+                                                    </a>
+                                                </span>
+                    </label>
+                  </div>
+                  <div class="input__btn">
+                    <button type="submit" class="btn">Внести депозит</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<ul>
+  <li>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCreateAccount">
+      Create new account
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCreateAccount" tabindex="-1" aria-labelledby="createAccount" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h1 class="modal-title" id="createAccount">Create new account</h1>
+
+            <form class="row">
+              <div class="col modalCreateAccount">
+                <div class="modal-content__input">
+                  <label>
+                    <input type="text" class="form-control" placeholder="First name">
+                  </label>
+                </div>
+                <div class="modal-content__input">
+                  <label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </label>
+                </div>
+                <div class="modal-content__input">
+                  <label>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </label>
+                </div>
+                <div class="modal-content__input">
+                  <label>
+                    <input type="password" class="form-control" placeholder="Confirm password">
+                  </label>
+                </div>
+                <div class="modal-content__input">
+                  <label>
+                    <input type="email" class="form-control" placeholder="Email">
+                  </label>
+                </div>
+                <div class="modal-content__input">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Country</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="modalCreateAccount__item-group">
+                  <div class="modalCreateAccount__item-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I am already 18 years old</label>
+                  </div>
+                  <div class="modalCreateAccount__item-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">I accept the site’s <a href="/">Privacy Policy</a></label>
+                  </div>
+                  <div class="modalCreateAccount__item-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                    <label class="form-check-label" for="exampleCheck3">A accept these <a href="/">Terms and Conditions</a></label>
+                  </div>
+                </div>
+                <div class="modal-content__input">
+                  <label>
+                    <input type="tel" class="form-control" placeholder="Phone">
+                  </label>
+                </div>
+                <div class="modal-content__input">
+                </div>
+                <div class="input__btn">
+                  <button type="submit" class="btn">Create new account</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<ul>
+  <li>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLoginIn">
+      Log In
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLoginIn" tabindex="-1" aria-labelledby="loginIn" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h1 class="modal-title" id="loginIn">Log In</h1>
+
+            <form class="row">
+                <div class="modal-content__input">
+                  <label>
+                    <input type="email" class="form-control" placeholder="Email">
+                  </label>
+                </div>
+                <div class="modal-content__input">
+                  <label>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </label>
+                </div>
+              <div class="modal-content__reset">
+                <p>Don’t remember the password? <a href="/">Reset password</a></p>
+              </div>
+                <div class="input__btn">
+                  <button type="submit" class="btn">Log In</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<ul>
+  <li>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalResetPass">
+      Reset password
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalResetPass" tabindex="-1" aria-labelledby="resetPass" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h1 class="modal-title" id="resetPass">Reset password</h1>
+
+            <form class="row">
+              <div class="modal-content__input">
+                <label>
+                  <input type="email" class="form-control" placeholder="Email">
+                </label>
+              </div>
+              <div class="modal-content__reset">
+                <p>I remember password? <a href="/">Login</a></p>
+              </div>
+              <div class="input__btn">
+                <button type="submit" class="btn">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<div class="abs">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="lk.html">Form</a>
+    </li>
+  </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/rangeslider/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

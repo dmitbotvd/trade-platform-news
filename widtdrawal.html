@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body class="light">
+    <ul>
+        <li>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Withdrawals">
+                Вывод средств
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="Withdrawals" tabindex="-1" aria-labelledby="exampleWithdrawals" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="exampleWithdrawals">Вывод средств</h1>
+
+                            <form class="modal-content__form">
+                                <div class="modal-content__input">
+                                    <label>
+                                        <input type="text" class="form-control" placeholder="Введите количество">
+                                    </label>
+                                </div>
+                                <div class="modal-content__input">
+                                    <label>
+                                        <input type="text" class="form-control" placeholder="Банк">
+                                    </label>
+                                </div>
+                                <div class="modal-content__input">
+                                    <label>
+                                        <input type="text" class="form-control" placeholder="Номер счета / карты">
+                                    </label>
+                                </div>
+                                <div class="modal-content__input">
+                                    <label>
+                                        <input type="text" class="form-control" placeholder="Бенефициар">
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn">Вывод</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#goTerminal">
+                Перейти в терминал
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="goTerminal" tabindex="-1" aria-labelledby="examplegoTerminal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="examplegoTerminal">Вывод средств</h1>
+                            <p>The financial department has started to execute your application. We will contact you shortly</p>
+                            <button type="submit" class="btn">Перейти в торговый терминал</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#makeDeposit">
+                Внести депозит
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="makeDeposit" tabindex="-1" aria-labelledby="examplemakeDeposit" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="examplemakeDeposit">Внести депозит</h1>
+                            <a href="#" id="theme-toggle">
+                                <img src="img/Switch.svg" alt="">
+                            </a>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-Bank-transfer-tab" data-bs-toggle="pill" data-bs-target="#pills-Bank-transfer" type="button" role="tab" aria-controls="pills-Bank-transfer" aria-selected="true">Банковский перевод</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Credit-card-tab" data-bs-toggle="pill" data-bs-target="#pills-Credit-card" type="button" role="tab" aria-controls="pills-Credit-card" aria-selected="false">Кредитная карта</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Crypto-transfer-tab" data-bs-toggle="pill" data-bs-target="#pills-Crypto-transfer" type="button" role="tab" aria-controls="pills-Crypto-transfer" aria-selected="false">Крипто перевод</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-Bank-transfer" role="tabpanel" aria-labelledby="pills-Bank-transfer-tab" tabindex="0">
+                                    <form class="modal-content__form">
+                                        <div class="modal-content__input">
+                                            <label>
+                                                <input type="text" class="form-control" placeholder="IBAN">
+                                            </label>
+                                        </div>
+                                        <div class="modal-content__input">
+                                            <label>
+                                                <input type="text" class="form-control" placeholder="Bank name">
+                                            </label>
+                                        </div>
+                                        <div class="modal-content__input">
+                                            <label>
+                                                <input type="text" class="form-control" placeholder="Responsible for this transfer manager">
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn">Внести депозит</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="pills-Credit-card" role="tabpanel" aria-labelledby="pills-Credit-card-tab" tabindex="0">
+                                    <form class="modal-content__form">
+                                        <div class="modal-content__input">
+                                            <label class="amount-input">
+                                                <input type="text" class="form-control" placeholder="Сумма">
+                                                <span class="amount-input-span">RUB</span>
+                                            </label>
+                                        </div>
+                                        <div class="modal-content__input">
+                                            <label>
+                                                <input type="text" class="form-control" placeholder="Номер карты">
+                                            </label>
+                                        </div>
+                                        <div class="modal-content__input">
+                                            <label>
+                                                <input type="text" class="form-control" placeholder="Полное имя владельца карты">
+                                            </label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="modal-content__input">
+                                                    <label>
+                                                        <input type="text" class="form-control" placeholder="ММ/ГГ">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="modal-content__input">
+                                                    <label>
+                                                        <input type="text" class="form-control" placeholder="CVV">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn">Внести депозит</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="pills-Crypto-transfer" role="tabpanel" aria-labelledby="pills-Crypto-transfer-tab" tabindex="0">
+                                    <form class="modal-content__form">
+                                        <div class="modal-content__qr">
+                                            <img src="img/qr.svg" alt="">
+                                        </div>
+                                        <div class="modal-content__input">
+                                            <label>
+                                                <input type="text" class="form-control" placeholder="Сеть">
+                                            </label>
+                                        </div>
+                                        <div class="modal-content__input">
+                                            <label class="input-address">
+                                                <input type="text" class="form-control" placeholder="Адрес">
+                                                <span class="input-address-copy">
+                                                    <a href="/">
+                                                        <img src="img/copy.svg" alt="">
+                                                    </a>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn">Внести депозит</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="abs">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="lk.html">Form</a>
+            </li>
+            <li>
+                <a href="widtdrawal.html">Modal</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+</body>
+</html>

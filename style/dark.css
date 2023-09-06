@@ -1,0 +1,58 @@
+body, .modal-body {
+    background: var(--board-color-dark) !important;
+}
+.lk-header, .header, .main-table,.market,.analysis, #pills-tab, .table-content .pagination, .navbar-collapse.collapse.show,
+.main-transactions #pills-tabContent, .main-transactions .tab-content {
+    background: var(--dark-background-block) !important;
+}
+.lk-header #pills-account .input__item label, .balance__value, .header-menu__text-name, .main-table__active,.table-striped tbody tr td,
+.table-striped tbody tr th, .market__title, .market-order__item .name, .market-order__item .value,
+.main-transactions #pills-tab .nav-item > .active, .lk-pills .nav-item > .active, .footer p, .grid-items__item,
+.modal-title, .modal-body, #contentSelector {
+    color: var(--color-white) !important;
+}
+.lk-header #pills-account .input__item input, .lk-header #pills-account .input__item select,
+.market-input-group .form-control, .modal-content input, .modal-content__input .form-select {
+    background: var(--board-color-light-dark) !important;
+}
+.grid-items:nth-child(2n), .table-content .pagination .page-link,
+#contentSelector {
+    background: var(--dark-light-table) !important;
+}
+.lk-header #pills-account .input__item input, .lk-header #pills-account .input__item select,
+.lk-header #pills-account .input__item-btn input::placeholder,.lk-header #pills-account .input__item-btn input::placeholder,
+.market-input-group .form-control::placeholder,
+.market-input-group .amount-input-span  {
+    color: var(--dark-input) !important;
+}
+.input__item-btn #phone::placeholder {
+    color: #fff !important;
+}
+.toggler-icon {
+    background: #fff !important;
+}
+.striped__color-green {
+    color: var(--color-green) !important;
+}
+.striped__color-red {
+    color: var(--color-red) !important;
+}
+/*$('.table').addClass('board-light-dark')*/
+/*$('.main-table__graphic img').attr('src','/img/trade-image-dark.png')*/
+/*$('.analysis img').attr('src','/img/speed-dark.png')*/
+/*$('.toggle-color img').attr('src','/img/Switch-dark.svg')*/
+/*$('.table-content .pagination').addClass('test');*/
+/*let testtest = '.main-transactions #pills-tab .nav-item > .active, .lk-pills .nav-item > .active';*/
+/*// ().addClass('testtest');*/
+/*if ($(testtest).prop('ariaSelected', true)) {*/
+/*    $(testtest).addClass('testtest');*/
+/*    console.log('cool')*/
+/*} else if ($('.nav-item').prop('ariaSelected', false)) {*/
+/*    console.log('error')*/
+/*}*/
+/*// if ($('button.nav-link').prop('ariaSelected', false)) {*/
+/*//     // $('button.nav-link').prop('aria-selected', false);*/
+/*//     console.log('cool')*/
+/*//     $('.main-transactions #pills-tab .nav-item > .active, .lk-pills .nav-item > .active').addClass('test-white');*/
+/*// }*/
+/*$('.page-link:hover').css({"background-color": "var(--color-grey-dark)"})*/
